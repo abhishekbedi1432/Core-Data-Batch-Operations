@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KER-N9-lkt">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Core data Batch Demo-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Core data Batch Demo" id="BYZ-38-t0r" customClass="CoreDataBatchUpdateVC" customModule="CoredataBatchUpdate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3E4-Fl-Dlh">
+                                <rect key="frame" x="8" y="366" width="164" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Batch Update"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnBatchUpdateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y1r-1y-z5U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLa-8H-tWh">
+                                <rect key="frame" x="8" y="328" width="164" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Normal Update"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnNormalUpdateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hVI-wa-S3q"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="– – – –" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJ8-xL-ZgP">
+                                <rect key="frame" x="180" y="328" width="109" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="– – – –" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9LC-qc-71c">
+                                <rect key="frame" x="180" y="366" width="109" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="– – – –" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXO-yM-jNz">
+                                <rect key="frame" x="180" y="442" width="109" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="– – – –" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jL3-vd-F1G">
+                                <rect key="frame" x="180" y="404" width="109" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bzh-Pw-MBN">
+                                <rect key="frame" x="8" y="442" width="164" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Batch Delete"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnBatchDeleteAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fse-6K-ARt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRf-uE-uTb">
+                                <rect key="frame" x="8" y="265" width="164" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Tkg-Yu-BQa"/>
+                                </constraints>
+                                <state key="normal" title="Insert"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnInsertAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="tPI-jZ-mHc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="– – – –" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fB0-TV-qDl">
+                                <rect key="frame" x="33" y="83" width="265" height="146"/>
+                                <color key="backgroundColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVS-Kq-8jb">
+                                <rect key="frame" x="8" y="404" width="164" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Plain Delete"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnPlainDelete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PyB-6J-DkA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K72-CF-aSe">
+                                <rect key="frame" x="180" y="265" width="132" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="fZz-l8-gPY"/>
+                                </constraints>
+                                <state key="normal" title="Fetch"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnFetchAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ycl-TL-hU0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="pS1-Sd-I1n">
+                                <rect key="frame" x="292" y="328" width="20" height="144"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" red="0.98039215686274506" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnResetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k74-Tx-LCa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xVS-Kq-8jb" firstAttribute="trailing" secondItem="Bzh-Pw-MBN" secondAttribute="trailing" id="0V6-Un-WWc"/>
+                            <constraint firstItem="WJ8-xL-ZgP" firstAttribute="trailing" secondItem="9LC-qc-71c" secondAttribute="trailing" id="0q2-vx-Qkf"/>
+                            <constraint firstItem="Bzh-Pw-MBN" firstAttribute="top" secondItem="xVS-Kq-8jb" secondAttribute="bottom" constant="8" symbolic="YES" id="16k-1D-x5Q"/>
+                            <constraint firstItem="QRf-uE-uTb" firstAttribute="baseline" secondItem="K72-CF-aSe" secondAttribute="baseline" id="19k-KV-uyv"/>
+                            <constraint firstItem="xVS-Kq-8jb" firstAttribute="top" secondItem="jL3-vd-F1G" secondAttribute="top" id="3kn-fc-kNb"/>
+                            <constraint firstItem="jL3-vd-F1G" firstAttribute="trailing" secondItem="EXO-yM-jNz" secondAttribute="trailing" id="3ra-4h-ycy"/>
+                            <constraint firstItem="jL3-vd-F1G" firstAttribute="top" secondItem="9LC-qc-71c" secondAttribute="bottom" constant="8" symbolic="YES" id="Axu-qW-0td"/>
+                            <constraint firstItem="fB0-TV-qDl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="Bj4-aJ-ahe"/>
+                            <constraint firstItem="fB0-TV-qDl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="C44-RY-f9t"/>
+                            <constraint firstItem="WJ8-xL-ZgP" firstAttribute="leading" secondItem="jL3-vd-F1G" secondAttribute="leading" id="Dwm-LW-abc"/>
+                            <constraint firstItem="QRf-uE-uTb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-8" id="Gqg-9s-Ry8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="K72-CF-aSe" secondAttribute="trailing" constant="-8" id="JCu-1q-JsN"/>
+                            <constraint firstItem="jL3-vd-F1G" firstAttribute="leading" secondItem="EXO-yM-jNz" secondAttribute="leading" id="KGW-3N-mgd"/>
+                            <constraint firstItem="pS1-Sd-I1n" firstAttribute="trailing" secondItem="K72-CF-aSe" secondAttribute="trailing" id="OPG-58-CQC"/>
+                            <constraint firstItem="pS1-Sd-I1n" firstAttribute="leading" secondItem="jL3-vd-F1G" secondAttribute="trailing" constant="3" id="Ok6-OM-RZ0"/>
+                            <constraint firstItem="K72-CF-aSe" firstAttribute="trailing" secondItem="WJ8-xL-ZgP" secondAttribute="trailing" constant="23" id="PZi-va-oOA"/>
+                            <constraint firstItem="9LC-qc-71c" firstAttribute="top" secondItem="WJ8-xL-ZgP" secondAttribute="bottom" constant="8" symbolic="YES" id="Q1o-XA-ERf"/>
+                            <constraint firstItem="QLa-8H-tWh" firstAttribute="trailing" secondItem="3E4-Fl-Dlh" secondAttribute="trailing" id="QCS-nU-Kl1"/>
+                            <constraint firstItem="WJ8-xL-ZgP" firstAttribute="centerX" secondItem="9LC-qc-71c" secondAttribute="centerX" id="SIG-Ub-ah7"/>
+                            <constraint firstItem="Bzh-Pw-MBN" firstAttribute="top" secondItem="EXO-yM-jNz" secondAttribute="top" id="Sbs-Ns-gJM"/>
+                            <constraint firstItem="QLa-8H-tWh" firstAttribute="top" secondItem="QRf-uE-uTb" secondAttribute="bottom" constant="33" id="TrS-4n-8Lm"/>
+                            <constraint firstItem="WJ8-xL-ZgP" firstAttribute="centerX" secondItem="jL3-vd-F1G" secondAttribute="centerX" id="UEg-H6-ksT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fB0-TV-qDl" secondAttribute="trailing" constant="6" id="VB4-RX-upW"/>
+                            <constraint firstItem="3E4-Fl-Dlh" firstAttribute="leading" secondItem="xVS-Kq-8jb" secondAttribute="leading" id="XJ5-ub-dKy"/>
+                            <constraint firstItem="K72-CF-aSe" firstAttribute="leading" secondItem="WJ8-xL-ZgP" secondAttribute="leading" id="YRo-DL-5wJ"/>
+                            <constraint firstItem="xVS-Kq-8jb" firstAttribute="leading" secondItem="Bzh-Pw-MBN" secondAttribute="leading" id="Z9X-i2-5fG"/>
+                            <constraint firstItem="QLa-8H-tWh" firstAttribute="leading" secondItem="3E4-Fl-Dlh" secondAttribute="leading" id="cjf-8F-bQ6"/>
+                            <constraint firstItem="xVS-Kq-8jb" firstAttribute="top" secondItem="3E4-Fl-Dlh" secondAttribute="bottom" constant="8" symbolic="YES" id="dUH-gn-Ppp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pS1-Sd-I1n" secondAttribute="bottom" constant="8" symbolic="YES" id="g0T-rL-v7H"/>
+                            <constraint firstItem="EXO-yM-jNz" firstAttribute="top" secondItem="jL3-vd-F1G" secondAttribute="bottom" constant="8" symbolic="YES" id="gnL-sv-DPV"/>
+                            <constraint firstItem="3E4-Fl-Dlh" firstAttribute="top" secondItem="9LC-qc-71c" secondAttribute="top" id="lcW-aG-lPE"/>
+                            <constraint firstItem="3E4-Fl-Dlh" firstAttribute="trailing" secondItem="xVS-Kq-8jb" secondAttribute="trailing" id="lsN-C5-Gz5"/>
+                            <constraint firstItem="3E4-Fl-Dlh" firstAttribute="top" secondItem="QLa-8H-tWh" secondAttribute="bottom" constant="8" symbolic="YES" id="n2O-qt-XeV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bzh-Pw-MBN" secondAttribute="bottom" constant="8" symbolic="YES" id="r2e-NJ-eVE"/>
+                            <constraint firstItem="QRf-uE-uTb" firstAttribute="top" secondItem="fB0-TV-qDl" secondAttribute="bottom" constant="36" id="rC1-Bd-7PP"/>
+                            <constraint firstItem="pS1-Sd-I1n" firstAttribute="firstBaseline" secondItem="WJ8-xL-ZgP" secondAttribute="baseline" id="rcP-i6-Myc"/>
+                            <constraint firstItem="pS1-Sd-I1n" firstAttribute="top" secondItem="WJ8-xL-ZgP" secondAttribute="top" id="sZR-Hh-4G6"/>
+                            <constraint firstItem="QRf-uE-uTb" firstAttribute="leading" secondItem="QLa-8H-tWh" secondAttribute="leading" id="szf-tp-AaI"/>
+                            <constraint firstItem="K72-CF-aSe" firstAttribute="leading" secondItem="QRf-uE-uTb" secondAttribute="trailing" constant="8" symbolic="YES" id="tNG-Ro-MC2"/>
+                            <constraint firstItem="QLa-8H-tWh" firstAttribute="top" secondItem="WJ8-xL-ZgP" secondAttribute="top" id="weQ-CS-f3c"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EXO-yM-jNz" secondAttribute="bottom" constant="8" symbolic="YES" id="wfg-cP-ORW"/>
+                            <constraint firstItem="9LC-qc-71c" firstAttribute="leading" secondItem="3E4-Fl-Dlh" secondAttribute="trailing" constant="8" symbolic="YES" id="zD3-oe-M2n"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Core Data Batch Operations" id="MLC-7v-37h"/>
+                    <connections>
+                        <outlet property="lblBatchDelete" destination="EXO-yM-jNz" id="yUW-NK-5VW"/>
+                        <outlet property="lblBatchUpdate" destination="9LC-qc-71c" id="nSz-W3-bay"/>
+                        <outlet property="lblNormalUpdate" destination="WJ8-xL-ZgP" id="Xsg-NW-Sqy"/>
+                        <outlet property="lblPlainDelete" destination="jL3-vd-F1G" id="SRV-WZ-GCf"/>
+                        <outlet property="lblRecords" destination="fB0-TV-qDl" id="afq-ll-9iz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1134.375" y="125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FfW-iu-xMQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KER-N9-lkt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M6W-iX-zLQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gnx-r1-rs9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="omy-kq-8MM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.875" y="125"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+</document>

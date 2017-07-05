@@ -22,7 +22,7 @@ class CoreDataBatchUpdateVC: UIViewController {
     var context : NSManagedObjectContext!
     let kMaxEntriesCount = 10000
     
-    //MARK:- View Controller Lifecycle -
+    //MARK:- View Controller Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,7 @@ class CoreDataBatchUpdateVC: UIViewController {
     }
     
     
-    //MARK:- Core Data Operations -
+    //MARK:- Core Data Operations
 
     func insertRecordsInBackground() {
         
@@ -59,7 +59,7 @@ class CoreDataBatchUpdateVC: UIViewController {
     
     
     
-    //MARK:- Helpers -
+    //MARK:- Helpers
 
     func performOperationAndReturnTime(operation : () -> ()) -> String {
         
@@ -73,6 +73,8 @@ class CoreDataBatchUpdateVC: UIViewController {
     }
     
 }
+
+//MARK:- IBActions
 
 extension CoreDataBatchUpdateVC {
     @IBAction func btnInsertAction() {
@@ -111,7 +113,7 @@ extension CoreDataBatchUpdateVC {
             let request = NSBatchUpdateRequest(entityName: "Student")
             request.propertiesToUpdate = ["firstName" : "BatchFN" , "lastName" : "BatchLN"]
             request.resultType = .updatedObjectsCountResultType
-            let result = try? self.context.execute(request) as! NSBatchUpdateResult
+            let _ = try? self.context.execute(request) as! NSBatchUpdateResult
         }
         
         lblRecords.text = "Batch Updated \n 👍"

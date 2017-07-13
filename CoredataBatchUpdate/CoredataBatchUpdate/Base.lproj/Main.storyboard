@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KER-N9-lkt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KER-N9-lkt">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -117,14 +116,14 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVS-Kq-8jb">
                                 <rect key="frame" x="8" y="404" width="164" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Plain Delete"/>
+                                <state key="normal" title="Normal Delete"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="btnPlainDelete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PyB-6J-DkA"/>
+                                    <action selector="btnNormalDelete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EXI-ZN-Klr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K72-CF-aSe">
@@ -210,8 +209,8 @@
                     <connections>
                         <outlet property="lblBatchDelete" destination="EXO-yM-jNz" id="yUW-NK-5VW"/>
                         <outlet property="lblBatchUpdate" destination="9LC-qc-71c" id="nSz-W3-bay"/>
+                        <outlet property="lblNormalDelete" destination="jL3-vd-F1G" id="f2V-ti-GHK"/>
                         <outlet property="lblNormalUpdate" destination="WJ8-xL-ZgP" id="Xsg-NW-Sqy"/>
-                        <outlet property="lblPlainDelete" destination="jL3-vd-F1G" id="SRV-WZ-GCf"/>
                         <outlet property="lblRecords" destination="fB0-TV-qDl" id="afq-ll-9iz"/>
                     </connections>
                 </viewController>

@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoredataBatchUpdate/CoreDataBatchUpdateVC.swift"
-            timestampString = "518101861.890704"
+            timestampString = "521653997.176821"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "82"
             endingLineNumber = "82"
-            landmarkName = "performOperationsAndReturnTime(operation:)"
+            landmarkName = "btnInsertAction()"
             landmarkType = "7">
             <Locations>
                <Location
@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoredataBatchUpdate/CoreDataBatchUpdateVC.swift"
-            timestampString = "518101861.890704"
+            timestampString = "521653997.176907"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "84"
             endingLineNumber = "84"
-            landmarkName = "performOperationsAndReturnTime(operation:)"
+            landmarkName = "btnInsertAction()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,12 +74,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoredataBatchUpdate/CoreDataBatchUpdateVC.swift"
-            timestampString = "518101861.890704"
+            timestampString = "521653997.176956"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "90"
             endingLineNumber = "90"
-            landmarkName = "performOperationsAndReturnTime(operation:)"
+            landmarkName = "btnNormalUpdateAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoredataBatchUpdate/CoreDataBatchUpdateVC.swift"
-            timestampString = "518101861.890704"
+            timestampString = "521653997.177001"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "96"
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoredataBatchUpdate/CoreDataBatchUpdateVC.swift"
-            timestampString = "518101861.890704"
+            timestampString = "521653997.177046"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "100"
@@ -122,12 +122,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoredataBatchUpdate/CoreDataBatchUpdateVC.swift"
-            timestampString = "518101861.890704"
+            timestampString = "521653997.177089"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "115"
             endingLineNumber = "115"
-            landmarkName = "btnNormalUpdateAction(_:)"
+            landmarkName = "btnBatchUpdateAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

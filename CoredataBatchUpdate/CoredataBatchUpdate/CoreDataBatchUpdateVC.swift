@@ -15,7 +15,7 @@ class CoreDataBatchUpdateVC: UIViewController {
     @IBOutlet weak var lblNormalUpdate: UILabel!
     @IBOutlet weak var lblBatchUpdate: UILabel!
     @IBOutlet weak var lblBatchDelete: UILabel!
-    @IBOutlet weak var lblPlainDelete: UILabel!
+    @IBOutlet weak var lblNormalDelete: UILabel!
     @IBOutlet weak var lblRecords: UILabel!
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -121,7 +121,7 @@ extension CoreDataBatchUpdateVC {
     }
     
     
-    @IBAction func btnPlainDelete(_ sender: Any) {
+    @IBAction func btnNormalDelete(_ sender: Any) {
         
         let timeSpent = performOperationAndReturnTime {[unowned self] in
             
@@ -139,8 +139,8 @@ extension CoreDataBatchUpdateVC {
                 
             }
         }
-        lblRecords.text = "Plain Deleted \n ☠️"
-        lblPlainDelete.text = "\(timeSpent)"
+        lblRecords.text = "Normal Deleted \n ☠️"
+        lblNormalDelete.text = "\(timeSpent)"
     }
     
     

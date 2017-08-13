@@ -17,16 +17,18 @@ class CoreDataBatchUpdateVC: UIViewController {
     @IBOutlet weak var lblBatchDelete: UILabel!
     @IBOutlet weak var lblNormalDelete: UILabel!
     @IBOutlet weak var lblRecords: UILabel!
+    @IBOutlet weak var progressView: UIProgressView!
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var context : NSManagedObjectContext!
-    let kMaxEntriesCount = 10000
-    
+    let kMaxEntriesCount = 100000
+    var totalRecords = 0
     //MARK:- View Controller Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         context = appDelegate.persistentContainer.viewContext
+        progressView.transform = CGAffineTransform(scaleX: 1.0, y: 2.5)
     }
     
     
@@ -55,7 +57,18 @@ class CoreDataBatchUpdateVC: UIViewController {
         
         return "\(results) records \n in \n\(timeSpent)"
     }
-
+    
+    func fetchTotalRecordsCount() -> Int {
+        let fetch: NSFetchRequest<Student> = Student.fetchRequest()
+        let backgroundContext = self.appDelegate.persistentContainer.newBackgroundContext()
+        var count = 0
+        backgroundContext.performAndWait {
+            count = try! self.appDelegate.persistentContainer.newBackgroundContext().count(for: fetch)
+        }
+        return count
+    }
+    
+    
     
     
     
@@ -77,6 +90,7 @@ class CoreDataBatchUpdateVC: UIViewController {
 //MARK:- IBActions
 
 extension CoreDataBatchUpdateVC {
+    
     @IBAction func btnInsertAction() {
         
         insertRecordsInBackground()
@@ -170,10 +184,68 @@ extension CoreDataBatchUpdateVC {
     }
     
     
+    @IBAction func btnAsyncFetchAction(_ sender: Any) {
+        
+        // Setting Progress to Zero
+        progressView.progress = 0
+        
+        fetchAndUpdateProgreeBar()
+    }
+    
+    func fetchAndUpdateProgreeBar() {
+        
+        do {
+            // Fetch Total Records Count
+             totalRecords = fetchTotalRecordsCount()
+            print("\n\n *** Total Records: \(totalRecords) *** \n\n")
+            // Creates a new `Progress` object
+            let progress = Progress(totalUnitCount: 1)
+            
+            // Sets the new progess as default one in the current thread
+            progress.becomeCurrent(withPendingUnitCount: 1)
+            
+            let fetch: NSFetchRequest<Student> = Student.fetchRequest()
+            let asynchronousFetchRequest = NSAsynchronousFetchRequest(fetchRequest: fetch, completionBlock: nil)
+            
+            // Keeps a reference of `NSPersistentStoreAsynchronousResult` returned by `execute`
+            let fetchResult = try self.appDelegate.persistentContainer.newBackgroundContext().execute(asynchronousFetchRequest) as? NSPersistentStoreAsynchronousResult
+            
+            // Resigns the current progress
+            progress.resignCurrent()
+            
+            // Adds observer
+            fetchResult?.progress?.addObserver(self, forKeyPath: #keyPath(Progress.completedUnitCount), options: .new, context: nil)
+            
+        } catch let error {
+            print("NSAsynchronousFetchRequest error: \(error)")
+        }
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        
+        if keyPath == #keyPath(Progress.completedUnitCount),
+            // Reads new value
+            let newValue = change?[.newKey] as? Int {
+            let fNewValue = Float(newValue)
+            let fTotalRecords = Float(totalRecords)
+            let progress = fNewValue / fTotalRecords
+            
+            print("\(newValue) / \(totalRecords) = \(progress)")
+            
+            DispatchQueue.main.async { [weak self] in
+//                self?.progressView.progress = progress
+                self?.progressView.setProgress(progress, animated: true)
+            }
+        }
+    }
+    
+    
+    
     @IBAction func btnResetAction(_ sender: Any) {
         if let lables = self.view.subviews.filter({$0 is UILabel}) as? [UILabel] {
             lables.forEach({$0.text = "– – – –"})
         }
+        progressView.progress = 0
     }
 }
 

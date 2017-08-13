@@ -10,60 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoredataBatchUpdate/CoreDataBatchUpdateVC.swift"
-            timestampString = "521653997.176821"
+            timestampString = "521665848.801409"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "btnInsertAction()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CoredataBatchUpdate.CoreDataBatchUpdateVC.performOperationsAndReturnTime (operation : () -&gt; ()) -&gt; Swift.String"
-                  moduleName = "CoredataBatchUpdate"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abhishekbedi/Desktop/DesktopData/MyCode/Learning/CoredataBatchUpdate/CoredataBatchUpdate/CoreDataBatchUpdateVC.swift"
-                  timestampString = "518100941.253385"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "95">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CoredataBatchUpdate.CoreDataBatchUpdateVC.(performOperationsAndReturnTime (operation : () -&gt; ()) -&gt; Swift.String).(closure #1)"
-                  moduleName = "CoredataBatchUpdate"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abhishekbedi/Desktop/DesktopData/MyCode/Learning/CoredataBatchUpdate/CoredataBatchUpdate/CoreDataBatchUpdateVC.swift"
-                  timestampString = "518100941.255128"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "24">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CoredataBatchUpdate/CoreDataBatchUpdateVC.swift"
-            timestampString = "521653997.176907"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
-            landmarkName = "btnInsertAction()"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "insertRecordsInBackground()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,60 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoredataBatchUpdate/CoreDataBatchUpdateVC.swift"
-            timestampString = "521653997.176956"
+            timestampString = "521665848.802448"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "btnNormalUpdateAction(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CoredataBatchUpdate/CoreDataBatchUpdateVC.swift"
-            timestampString = "521653997.177001"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
-            landmarkName = "btnNormalUpdateAction(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CoredataBatchUpdate/CoreDataBatchUpdateVC.swift"
-            timestampString = "521653997.177046"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "btnNormalUpdateAction(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CoredataBatchUpdate/CoreDataBatchUpdateVC.swift"
-            timestampString = "521653997.177089"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "btnBatchUpdateAction(_:)"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "insertRecordsInBackground()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
